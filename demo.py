@@ -32,7 +32,7 @@ st.title("Contract Document Reader")
 
 # Add a file uploader widget
 uploaded_file = st.file_uploader("Upload a Word document", type="docx")
-genai.configure(api_key='AIzaSyCyMQEtlPdNj8Gr5fkhI9p24nF84ZmlMOc')
+genai.configure(api_key=env.API_KEY)
 MODEL_CONFIG= {
     "temperature": 1,
     "top_p":0.95,
